@@ -101,7 +101,7 @@ exports[`render an enabled submit button 1`] = `
           style={Object {}}
         >
           <div
-            className="pa2 pt0 bg-white br2 br--bottom"
+            className="pa2 pt0 bg-white br2 br--bottom h5"
           >
             <div
               className="bt b--off-black overflow-y-auto h5"

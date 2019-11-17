@@ -59,7 +59,7 @@ const PopupListForecast = ({ cityName }) => {
         duration={500}
         height={heightFull} // see props documentation below
       >
-        <div className="pa2 pt0 bg-white br2 br--bottom">
+        <div className="pa2 pt0 bg-white br2 br--bottom h5">
           <div className="bt b--off-black overflow-y-auto h5">
             <Forecast cityName={cityName} />
           </div>
