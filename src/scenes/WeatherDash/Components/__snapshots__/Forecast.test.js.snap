@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render an enabled submit button 1`] = `
+<div
+  className="h-100 w-100 ph2"
+>
+  <div
+    className="Spinner min-h-100 relative"
+  >
+    <div
+      className="loader"
+    >
+      <div
+        className="square"
+      />
+      <div
+        className="square"
+      />
+      <div
+        className="square last"
+      />
+      <div
+        className="square clear"
+      />
+      <div
+        className="square"
+      />
+      <div
+        className="square last"
+      />
+      <div
+        className="square clear"
+      />
+      <div
+        className="square "
+      />
+      <div
+        className="square last"
+      />
+    </div>
+  </div>
+</div>
+`;

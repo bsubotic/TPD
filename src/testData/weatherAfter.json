@@ -1,0 +1,11 @@
+{
+  "cityName": "Skopje",
+  "condition": "Clouds",
+  "icon": "http://openweathermap.org/img/wn/02d@2x.png",
+  "temperature": 14.88,
+  "cloudiness": 20,
+  "humidity": 76,
+  "date": "2019-11-17T12:26:35.000Z",
+  "sunrise": "2019-11-17T05:26:09.000Z",
+  "sunset": "2019-11-17T15:12:26.000Z"
+}

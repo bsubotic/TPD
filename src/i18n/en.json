@@ -1,0 +1,23 @@
+{
+  "companyName": "Acme",
+  "whoops": "Whoops!",
+  "somethingWentWrong": "It seems we have a problem.",
+  "goToHomepage": "Click here to go back to home page",
+  "cantFindPage": "We can't find that page. Please try again.",
+  "forecast": "Forecast",
+  "today": "Today",
+  "tomorrow": "Tomorrow",
+  "browserNotSupported": {
+    "title": "Please upgrade your browser.",
+    "text": "No flex, no fun. Please do what the title says.",
+    "chrome": "Chrome V21+",
+    "chromeLink": "https://www.google.com/chrome/browser/desktop/index.html",
+    "firefox": "Firefox V28+",
+    "firefoxLink": "https://www.mozilla.org/en-US/firefox/new",
+    "ie": "IE11+",
+    "ieLink": "https://www.microsoft.com/en-ie/download/internet-explorer.aspx",
+    "safari": "Safari",
+    "safariLink": "https://support.apple.com/downloads/safari",
+    "download": "Download"
+  }
+}

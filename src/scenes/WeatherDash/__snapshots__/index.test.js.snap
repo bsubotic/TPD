@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render an enabled submit button 1`] = `
+<div
+  className="pa4 flex flex-nowrap overflow-x-auto h-100"
+/>
+`;

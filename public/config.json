@@ -1,0 +1,15 @@
+{
+  "api": "http://api.openweathermap.org/data/2.5/",
+  "applicationId": "bd8326266ffeb1b662cf75fadf5dee2a",
+  "cities": [
+    "Dublin",
+    "Mexico City",
+    "London",
+    "La La Place",
+    "Miami",
+    "Zagreb",
+    "Skopje",
+    "Tokyo"
+  ],
+  "frontendDataTransformation": true
+}

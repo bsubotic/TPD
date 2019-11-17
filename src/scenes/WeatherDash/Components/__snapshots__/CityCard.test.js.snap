@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render an enabled submit button 1`] = `
+<div
+  className="flex-auto h-100 w-100 w-50-m w-30-ns w20-l  pa2"
+  style={
+    Object {
+      "flexShrink": 0,
+    }
+  }
+>
+  <div
+    className="Spinner min-h-100 relative"
+  >
+    <div
+      className="loader"
+    >
+      <div
+        className="square"
+      />
+      <div
+        className="square"
+      />
+      <div
+        className="square last"
+      />
+      <div
+        className="square clear"
+      />
+      <div
+        className="square"
+      />
+      <div
+        className="square last"
+      />
+      <div
+        className="square clear"
+      />
+      <div
+        className="square "
+      />
+      <div
+        className="square last"
+      />
+    </div>
+  </div>
+</div>
+`;

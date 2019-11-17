@@ -1,0 +1,29 @@
+{
+  "coord": { "lon": 21.43, "lat": 42 },
+  "weather": [
+    { "id": 801, "main": "Clouds", "description": "few clouds", "icon": "02d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 14.88,
+    "pressure": 1018,
+    "humidity": 76,
+    "temp_min": 13.89,
+    "temp_max": 16.67
+  },
+  "visibility": 10000,
+  "wind": { "speed": 1.89, "deg": 97 },
+  "clouds": { "all": 20 },
+  "dt": 1573993595,
+  "sys": {
+    "type": 1,
+    "id": 7023,
+    "country": "MK",
+    "sunrise": 1573968369,
+    "sunset": 1574003546
+  },
+  "timezone": 3600,
+  "id": 785842,
+  "name": "Skopje",
+  "cod": 200
+}

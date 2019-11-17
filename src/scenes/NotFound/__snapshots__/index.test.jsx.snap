@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render an enabled submit button 1`] = `
+<div
+  className="tc"
+>
+  <svg
+    alt="companyName"
+    className="w4 pa3"
+  >
+    acme-logo.svg
+  </svg>
+  <div
+    className="f1 pa4"
+  >
+    whoops
+  </div>
+  <svg
+    alt="whoops"
+  >
+    whoops.svg
+  </svg>
+  <div
+    className="f4 pa3"
+  >
+    cantFindPage
+  </div>
+  <a
+    className="f6 no-underline pa3 blue-light"
+    href="/"
+    onClick={[Function]}
+  >
+    goToHomepage
+  </a>
+</div>
+`;

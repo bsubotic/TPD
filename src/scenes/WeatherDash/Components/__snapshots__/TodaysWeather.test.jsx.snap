@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render an enabled submit button 1`] = `
+<div
+  className="flex flex-column min-h-100"
+>
+  <div
+    className="flex flex-column justify-between"
+    style={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+  >
+    <div
+      className="flex justify-between h4"
+    >
+      <div
+        className="flex pa4"
+      >
+        <span
+          className="f2 mr1"
+        />
+        <div
+          className="flex flex-column"
+        >
+          <svg
+            className="h1"
+          >
+            humidity.svg
+          </svg>
+          <span
+            className="f5 mt2"
+          >
+            %
+          </span>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <img
+          alt=""
+        />
+      </div>
+    </div>
+    <div
+      className="self-center f2"
+    />
+    <div
+      className="self-center f3"
+    />
+    <div
+      className="mt4 self-center"
+    >
+      <span
+        className="f1"
+      />
+      <span
+        className="f2"
+      >
+        °C
+      </span>
+    </div>
+    <div>
+      <div
+        aria-hidden={false}
+        className="rah-static rah-static--height-auto"
+        style={
+          Object {
+            "height": "auto",
+            "overflow": "visible",
+          }
+        }
+      >
+        <div
+          style={Object {}}
+        >
+          <div
+            className="h4"
+          />
+        </div>
+      </div>
+      <button
+        className="br0 pointer pa3 w-100 outline-0 bn bg-white bg-inherit h3 br2 br--bottom"
+        onClick={[Function]}
+      >
+        forecast
+      </button>
+      <div
+        aria-hidden={true}
+        className="rah-static rah-static--height-zero"
+        style={
+          Object {
+            "height": 0,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          style={Object {}}
+        >
+          <div
+            className="pa2 pt0 bg-white br2 br--bottom"
+          >
+            <div
+              className="bt b--off-black overflow-y-auto h5"
+            >
+              <div
+                className="h-100 w-100 ph2"
+              >
+                <div
+                  className="Spinner min-h-100 relative"
+                >
+                  <div
+                    className="loader"
+                  >
+                    <div
+                      className="square"
+                    />
+                    <div
+                      className="square"
+                    />
+                    <div
+                      className="square last"
+                    />
+                    <div
+                      className="square clear"
+                    />
+                    <div
+                      className="square"
+                    />
+                    <div
+                      className="square last"
+                    />
+                    <div
+                      className="square clear"
+                    />
+                    <div
+                      className="square "
+                    />
+                    <div
+                      className="square last"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,83 @@
+{
+  "root": true,
+  "plugins": ["prettier", "import"],
+  "extends": ["react-app", "prettier", "prettier/react"],
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-useless-path-segments": "warn",
+    "import/no-self-import": "error",
+    "import/no-cycle": "error",
+    "import/first": "warn",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/default": "error",
+    "import/export": "warn",
+    "import/no-duplicates": "warn",
+    "import/extensions": [
+      "warn",
+      "always",
+      { "js": "never", "jsx": "never", "json": "never", "mjs": "never" }
+    ],
+    "import/newline-after-import": "warn",
+    "import/no-unassigned-import": [
+      "warn",
+      {
+        "allow": [
+          "**/*.{css,scss}",
+          "**/vendor/modernizr",
+          "whatwg-fetch",
+          "core-js/stable"
+        ]
+      }
+    ],
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-mutable-exports": "error",
+    "import/no-named-default": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/__tests__/**/*.js",
+          "**/test.js",
+          "**/spec.js",
+          "**/*.test.js",
+          "**/*.spec.js"
+        ]
+      }
+    ],
+    "import/no-unresolved": ["error", { "ignore": ["./*.css"] }],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "prettier/prettier": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"],
+        "paths": ["src"],
+        "moduleDirectory": ["node_modules"]
+      }
+    }
+  }
+}
