@@ -26,12 +26,12 @@ const ListOfDays = ({ forecastData }) => (
         </div>
         <div className="self-center flex mr3">
           <div className="pb2 flex red">
-            <div className="f4 ">{maxTemp && Math.round(maxTemp)}</div>
+            <div className="f4 ">{maxTemp}</div>
             <span className="f5">°C</span>
           </div>
           <span className="f2">/</span>
           <div className="pt3 flex blue">
-            <div className="f4 ">{minTemp && Math.round(minTemp)}</div>
+            <div className="f4 ">{minTemp}</div>
             <span className="f5">°C</span>
           </div>
         </div>

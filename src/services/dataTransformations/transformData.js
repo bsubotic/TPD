@@ -20,12 +20,7 @@ export const transformForecastData = data => {
     } = list[i];
 
     let date = epochToDate(dt);
-
     const hours = date.getHours();
-    const newItem = newListOfForecast[j];
-    const newMin = (newItem && newItem.minTemp) || Number.POSITIVE_INFINITY;
-    const newMax = (newItem && newItem.maxTemp) || Number.NEGATIVE_INFINITY;
-
     date.setHours(0, 0, 0, 0);
 
     if (prevDate.getTime() !== date.getTime()) {
@@ -33,12 +28,20 @@ export const transformForecastData = data => {
       if (++j >= DAYS_OF_FORECAST) break;
     }
 
+    const newItem = newListOfForecast[j];
+    const newMin = (newItem && newItem.minTemp) || Number.POSITIVE_INFINITY;
+    const newMax = (newItem && newItem.maxTemp) || Number.NEGATIVE_INFINITY;
+    const newCondition =
+      hours === 15 ? condition : newItem && newItem.condition;
+    const newSrcIcon =
+      hours === 15 ? getIconSrc(icon) : newItem && newItem.icon;
+
     newListOfForecast[j] = {
       date: date.toISOString(),
-      minTemp: Math.min(newMin, minTemp),
-      maxTemp: Math.max(newMax, maxTemp),
-      condition: hours === 15 ? condition : newItem && newItem.condition,
-      icon: hours === 15 ? getIconSrc(icon) : newItem && newItem.icon
+      minTemp: Math.round(Math.min(newMin, minTemp)),
+      maxTemp: Math.round(Math.max(newMax, maxTemp)),
+      condition: newCondition || condition,
+      icon: newSrcIcon || getIconSrc(icon)
     };
   }
   return newListOfForecast;
@@ -51,7 +54,7 @@ export const transformWeatherData = data => {
     dt: dateEpoch,
     sys: { sunrise: sunriseEpoch, sunset: sunsetEpoch } = {},
     clouds: { all: cloudiness } = {},
-    main: { temp: temperature, humidity } = {},
+    main: { temp, humidity } = {},
     weather: [{ main: condition, icon: iconCode }] = [{}],
     name: cityName
   } = data;
@@ -60,7 +63,7 @@ export const transformWeatherData = data => {
     cityName,
     condition,
     icon: getIconSrc(iconCode),
-    temperature,
+    temperature: temp && Math.round(temp),
     cloudiness,
     humidity,
     date: dateEpoch && epochToDate(dateEpoch).toISOString(),

@@ -1,4 +1,4 @@
-import { dissoc } from "ramda";
+import { remove, dissoc } from "ramda";
 
 import forecastBefore from "testData/forecastBefore.json";
 import forecastAfter from "testData/forecastAfter.json";
@@ -36,6 +36,24 @@ describe("Check that forecast transformation works", () => {
 
   test("Good data", () => {
     expect(transformForecastData(forecastBefore)).toEqual(forecastAfter);
+  });
+
+  test("Good data after 15pm", () => {
+    const [first, ...rest] = forecastAfter;
+
+    expect(
+      transformForecastData({
+        list: remove(0, 1, forecastBefore.list)
+      })
+    ).toEqual([
+      {
+        ...first,
+        condition: "Rain",
+        icon: "http://openweathermap.org/img/wn/10n@2x.png",
+        minTemp: 13
+      },
+      ...rest
+    ]);
   });
 });
 

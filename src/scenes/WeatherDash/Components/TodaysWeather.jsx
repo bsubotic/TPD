@@ -25,7 +25,7 @@ const HumidityAndWeatherIcon = ({ humidity, icon }) => (
 
 const Temperature = ({ temperature }) => (
   <div className="mt4 self-center">
-    <span className="f1">{temperature && Math.round(temperature)}</span>
+    <span className="f1">{temperature}</span>
     <span className="f2">°C</span>
   </div>
 );

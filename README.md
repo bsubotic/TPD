@@ -59,7 +59,8 @@ config.json:
 
 ## Starting the app
 
-App can be start by first running `yarn` and then afterwards `yarn start` while located in /frontend folder
+App can be start by first running `yarn` and then afterwards `yarn start` while located in root folder.
+Expect app to be running on `http://localhost:3000`
 
 ## Running tests
 

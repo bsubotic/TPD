@@ -1,36 +1,36 @@
 [
   {
     "date": "2019-11-17T00:00:00.000Z",
-    "minTemp": 12.29,
-    "maxTemp": 15.12,
+    "minTemp": 12,
+    "maxTemp": 15,
     "condition": "Clouds",
     "icon": "http://openweathermap.org/img/wn/04n@2x.png"
   },
   {
     "date": "2019-11-18T00:00:00.000Z",
-    "minTemp": 12.29,
-    "maxTemp": 21.14,
+    "minTemp": 17,
+    "maxTemp": 21,
     "condition": "Rain",
     "icon": "http://openweathermap.org/img/wn/10n@2x.png"
   },
   {
     "date": "2019-11-19T00:00:00.000Z",
-    "minTemp": 12.29,
-    "maxTemp": 21.14,
+    "minTemp": 13,
+    "maxTemp": 20,
     "condition": "Clouds",
     "icon": "http://openweathermap.org/img/wn/04n@2x.png"
   },
   {
     "date": "2019-11-20T00:00:00.000Z",
-    "minTemp": 11.25,
-    "maxTemp": 21.14,
+    "minTemp": 11,
+    "maxTemp": 15,
     "condition": "Clouds",
     "icon": "http://openweathermap.org/img/wn/02n@2x.png"
   },
   {
     "date": "2019-11-21T00:00:00.000Z",
-    "minTemp": 11.25,
-    "maxTemp": 21.14,
+    "minTemp": 12,
+    "maxTemp": 14,
     "condition": "Clouds",
     "icon": "http://openweathermap.org/img/wn/04n@2x.png"
   }
